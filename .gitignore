@@ -1,0 +1,21 @@
+# 编译产物
+**/build/
+*.o *.out *.exe *.so *.a *.lib
+*.obj *.dep *.d *.pdb *.ilk
+
+# 日志与临时文件
+*.log *.tmp *~ *.bak *.swp *.swo
+
+# 编辑器配置
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/ .clion/ .cmake/
+CMakeCache.txt CMakeFiles/ Makefile
+
+# 系统文件
+.DS_Store Thumbs.db
+
+# 大文件/压缩包
+*.zip *.tar.gz *.rar *.csv *.xlsx

@@ -1,0 +1,55 @@
+{
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.debuggerPath": "/usr/bin/gdb",
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/c++/9", 
+        "/usr/include/x86_64-linux-gnu/c++/9"
+    ],
+
+    
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, AllowShortFunctionsOnASingleLine: Empty}",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+
+    
+    "files.associations": {
+        "*.cpp": "cpp", "*.h": "cpp", "*.hpp": "cpp", "*.cc": "cpp",
+        "vector": "cpp", "string": "cpp", "iostream": "cpp", "algorithm": "cpp"
+    },
+
+    
+    "remote.autoForwardPorts": true,
+    "C_Cpp.remote.autoReconnect": true,
+    "remote.SSH.connectTimeout": 30,
+    "remote.SSH.showLoginTerminal": true,
+    "terminal.integrated.env.linux": { "LANG": "zh_CN.UTF-8", "LC_ALL": "zh_CN.UTF-8" },
+
+    
+    "debug.inlineValues": true,
+    "debug.toolBarLocation": "docked",
+    "debug.console.wordWrap": true,
+
+    
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+        "**/build": true, "**/.git": true, "**/.vscode": false,
+        "**/.o": true, "**/.log": true, "**/__pycache__": true
+    },
+    "search.exclude": { "**/build": true, "**/docs": true },
+
+    
+    "editor.fontSize": 14,
+    "editor.lineNumbers": "on",
+    "editor.rulers": [120],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "explorer.compactFolders": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}

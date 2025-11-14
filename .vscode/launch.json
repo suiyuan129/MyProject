@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Project",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${input:projectName}/build/${input:projectName}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/${input:projectName}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                { "text": "-enable-pretty-printing", "ignoreFailures": true }
+            ],
+            "preLaunchTask": "Compile Project"
+            // 移除这里的 inputs，移到根节点
+        }
+    ],
+    // 将 inputs 放在根节点，与 configurations 同级
+    "inputs": [
+        {
+            "id": "projectName",
+            "type": "pickString",
+            "description": "选择要调试的项目",
+            "options": ["proj1", "proj2", "smart_ptr_db"]
+        }
+    ]
+}

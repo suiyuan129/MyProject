@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compile Project",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${workspaceFolder}/${input:projectName}/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/${input:projectName}/build/${input:projectName}"
+            ],
+            "options": { "cwd": "/usr/bin" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "projectName",
+            "type": "pickString",
+            "description": "选择要编译的项目",
+            "options": ["proj1", "proj2"] // 仅保留项目列表，删除 default 项
+        }
+    ]
+}

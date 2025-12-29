@@ -25,7 +25,7 @@
             "id": "projectName",
             "type": "pickString",
             "description": "选择要调试的项目",
-            "options": ["smart_ptr_db"]
+            "options": ["smart_ptr_db","thread_pool_db"]
         }
     ]
 }

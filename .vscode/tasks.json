@@ -22,7 +22,7 @@
             "id": "projectName",
             "type": "pickString",
             "description": "选择要编译的项目",
-            "options": ["smart_ptr_db"] // 仅保留项目列表，删除 default 项
+            "options": ["smart_ptr_db","thread_pool_db"]
         }
     ]
 }
